@@ -1,6 +1,7 @@
 ---
 layout: layout.njk
 title: coreycaitlin.com
+permalink: "/"
 ---
 
 **Hello! This site is under construction as I re-learn how to [ride a bicycle](https://www.11ty.dev).**
