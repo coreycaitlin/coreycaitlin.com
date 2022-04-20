@@ -3,6 +3,7 @@ module.exports = function (eleventyConfig) {
     // eleventyConfig.addPassthroughCopy("styles/main.css");
     eleventyConfig.ignores.add("README.md");
     eleventyConfig.ignores.add("styles/main.css");
+    eleventyConfig.addWatchTarget("./styles/");
     return {
         // When a passthrough file is modified, rebuild the pages:
         // passthroughFileCopy: true,

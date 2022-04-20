@@ -1,6 +1,6 @@
 ---
 layout: layout.njk
-title: coreycaitlin.com
+title: Corey Mahoney
 permalink: "/"
 ---
 

@@ -5,14 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx @11ty/eleventy && postcss ./styles/main.css -o ./_site/main.css",
-    "start": "npx @11ty/eleventy --serve && postcss ./styles/main.css -o ./_site/main.css -w"
+    "build": "npx @11ty/eleventy && npx postcss ./styles/main.css -o ./_site/main.css",
+    "start:css": "npx postcss ./styles/main.css -o ./_site/main.css -w",
+    "start":  "npx @11ty/eleventy --serve"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
+    "@tailwindcss/typography": "^0.5.2",
     "postcss": "^8.4.12",
     "postcss-cli": "^9.1.0"
   },
