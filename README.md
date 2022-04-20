@@ -1,1 +1,8 @@
-# Page header
+# coreycaitlin.com
+
+- Simple static personal homepage
+- Bits & bobs include:
+    - 11ty
+    - PostCSS
+    - TailwindCSS
+    - Vercel
