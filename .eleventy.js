@@ -1,14 +1,17 @@
 module.exports = function (eleventyConfig) {
-    // Copy `main.css` to `_site/main.css`
-    // eleventyConfig.addPassthroughCopy("styles/main.css");
+    // Pass through images
+    eleventyConfig.addPassthroughCopy("content/img/*.{jpg,gif,png}");
+    // Ignore README, CSS (PostCSS will do it), filters)
     eleventyConfig.ignores.add("README.md");
     eleventyConfig.ignores.add("styles/main.css");
     eleventyConfig.ignores.add("filters/");
+    // Watch styles folder
     eleventyConfig.addWatchTarget("./styles/");
+    // Use Day.js filter for better date formatting
     eleventyConfig.addNunjucksFilter('date', require('./filters/nunjucks-dayjs-filter'));
     return {
-        // When a passthrough file is modified, rebuild the pages:
-        // passthroughFileCopy: true,
+        "dataTemplateEngine": "njk",
+        passthroughFileCopy: true
     };
     
     // Set custom directories for input, output, includes, and data

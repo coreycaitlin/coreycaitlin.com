@@ -1,8 +1,7 @@
 ---
 title: "Burn your welcome mat"
 date: 2013-10-12
-tags: post
-layout: layout.njk
+layout: post
 subtitle: "Why you should do away with your unhelpful homepage copy."
 meta: Originally [published on Medium](https://medium.com/back-to-basics/burn-your-welcome-mat-ee7f5916f6ef)
 excerpt: "When users come to your website, they’re not wandering a residential neighborhood knocking on doors and looking for new friends to spend time with. They’re trying to get somewhere, find something, or complete a task."
@@ -55,7 +54,7 @@ No, really. What happens if you delete that content? Does it look weird? If some
 Here’s the Etsy homepage, which has no intro text at all:
 
 <figure>
-    <img src="/images/screenshot-etsy-homepage.png" alt="Screenshot of the Etsy homepage: there is no intro text. Instead there are descriptive navigation terms and images of products.">
+    <img src="/content/img/screenshot-etsy-homepage.png" alt="Screenshot of the Etsy homepage: there is no intro text. Instead there are descriptive navigation terms and images of products.">
     <figcaption>Even if you don’t know what Etsy is, it’s pretty clear from the pictures and prices: you’re on a shopping site for homemade & vintage-y stuff.</figcaption>
 </figure>
 
@@ -66,7 +65,7 @@ Imagine a user walking up to your website and asking, “Excuse me, what do you 
 Here’s a site I worked on:
 
 <figure>
-    <img src="/images/screenshot-ucop-edu-homepage.png" alt="Screenshot of University of California Office of the President homepage. Below a large promotional banner is the intro text, which reads: The Office of the President is the systemwide headquarters of the University of California, managing its fiscal and business operations, and supporting the academic and research missions across its campuses, labs and medical centers.">
+    <img src="/content/img/screenshot-ucop-edu-homepage.png" alt="Screenshot of University of California Office of the President homepage. Below a large promotional banner is the intro text, which reads: The Office of the President is the systemwide headquarters of the University of California, managing its fiscal and business operations, and supporting the academic and research missions across its campuses, labs and medical centers.">
     <figcaption>We want people to know right away: this site is systemwide (not a campus site), our role is supportive, and we’ve got fiscal & business stuff (not recruiting or academics). It’s not scintillating, but it does the trick.</figcaption>
 </figure>
 
@@ -77,7 +76,7 @@ If it’s a site for experts, beginners will be frustrated. If it’s a site for
 Here’s a great example from the Form & Future site, which I was just looking at:
 
 <figure>
-    <img src="/images/screenshot-form-and-future-homepage.png" alt="Screenshot of the homepage for Form and Future. Intro text at the top of the page reads: Form and Future is interviews for new designers and events for new makers. We're on a mission to discover what makes creative people tick — one conversation at a time.">
+    <img src="/content/img/screenshot-form-and-future-homepage.png" alt="Screenshot of the homepage for Form and Future. Intro text at the top of the page reads: Form and Future is interviews for new designers and events for new makers. We're on a mission to discover what makes creative people tick — one conversation at a time.">
     <figcaption>Here’s what I get: this site is for newbies, designers, and makers. If I identify as any of those things, awesome!</figcaption>
 </figure>
 
@@ -88,7 +87,7 @@ Lots of great sites have the word “welcome” on their homepage. Make it quick
 Gov.uk, show us how it’s done:
 
 <figure>
-    <img src="/images/screenshot-gov-uk-homepage.png" alt="Screenshot of the Gov.uk homepage. Intro text at the top reads: Welcome to GOV.UK. The best place to find government services and information. Simpler, clearer, faster.">
+    <img src="/content/img/screenshot-gov-uk-homepage.png" alt="Screenshot of the Gov.uk homepage. Intro text at the top reads: Welcome to GOV.UK. The best place to find government services and information. Simpler, clearer, faster.">
     <figcaption>No time wasted getting to services, search, and major keywords. The welcome gets out of the way.</figcaption>
 </figure>
 

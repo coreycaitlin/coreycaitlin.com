@@ -1,8 +1,7 @@
 ---
 title: "An inclusive bookshelf for babies and toddlers"
 date: 2020-02-27
-tags: post
-layout: layout.njk
+layout: post
 subtitle: "Board books against the white supremacist patriarchy"
 excerpt: "The books we give kids are a representation of the world — how we see it, what we think is important, and how we think it should be. If you have a white child (as I do) and you want to raise that child to be anti-racist (as we all should), you'll need to pay attention."
 ---
@@ -21,7 +20,7 @@ Here are a couple other things I keep in mind as I look for books (both for gift
 
 You can find all of these online, but please buy them at your local bookstore if you have one. Even if _they_ have to order them, it helps them learn about more diverse books and potentially start carrying them as part of their regular stock.
 
-<img src="/images/board-books-1.JPG" alt="Picture of front-facing bookshelf with children's books">
+<img src="/content/img/board-books-1.JPG" alt="Picture of front-facing bookshelf with children's books">
 
 ### Books with non-white kids as the subjects
 
@@ -37,7 +36,7 @@ You can find all of these online, but please buy them at your local bookstore if
 - **Snowy Day** by Ezra Jack Keats
 - **Say Hello!** by Rachel Isadora
 
-<img src="/images/board-books-2.JPG" alt="Picture of front-facing bookshelf with children's books" >
+<img src="/content/img/board-books-2.JPG" alt="Picture of front-facing bookshelf with children's books" >
 
 ### Books with diverse groups of humans
 

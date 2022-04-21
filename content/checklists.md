@@ -8,7 +8,7 @@ permalink: /checklists/
 
 _Do these things every day._
 
-<form>
+<form class="">
     <p>
         <input type="checkbox" id="coffee">
         <label for="coffee">coffee</label>
