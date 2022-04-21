@@ -1,0 +1,14 @@
+---
+layout: layout.njk
+---
+
+{{ content | safe }}
+
+{%- for post in collections.post | reverse -%}
+    <h2><a class="border-b border-dotted border-red-900 no-underline text-stone-800 hover:border-solid" href="{{ post.url }}">{{ post.data.title }}</a></h2>
+    <p class="italic">{{ post.data.date | date('MMMM D, YYYY') }}{% if post.data.meta %}
+        | {{ post.data.meta }}        
+    {% endif %}</p>
+    <p>{{ post.data.excerpt }}</p>
+{%- endfor -%}
+

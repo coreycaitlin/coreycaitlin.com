@@ -1,7 +1,8 @@
 ---
 layout: layout.njk
-title: Corey Mahoney
+title: About
 permalink: "/"
+tags: nav
 ---
 
 **Hello! This site is under construction as I re-learn how to [ride a bicycle](https://www.11ty.dev).**

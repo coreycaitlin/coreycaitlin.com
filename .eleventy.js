@@ -3,7 +3,9 @@ module.exports = function (eleventyConfig) {
     // eleventyConfig.addPassthroughCopy("styles/main.css");
     eleventyConfig.ignores.add("README.md");
     eleventyConfig.ignores.add("styles/main.css");
+    eleventyConfig.ignores.add("filters/");
     eleventyConfig.addWatchTarget("./styles/");
+    eleventyConfig.addNunjucksFilter('date', require('./filters/nunjucks-dayjs-filter'));
     return {
         // When a passthrough file is modified, rebuild the pages:
         // passthroughFileCopy: true,

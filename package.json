@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx @11ty/eleventy && npx postcss ./styles/main.css -o ./_site/main.css",
     "start:css": "npx postcss ./styles/main.css -o ./_site/main.css -w",
-    "start":  "npx @11ty/eleventy --serve"
+    "start": "npx @11ty/eleventy --serve"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.4",
+    "dayjs": "^1.11.1",
     "tailwindcss": "^3.0.24"
   }
 }
