@@ -1,7 +1,7 @@
 ---
 title: "An inclusive bookshelf for babies and toddlers"
 date: 2020-02-27
-layout: post
+layout: post.njk
 subtitle: "Board books against the white supremacist patriarchy"
 excerpt: "The books we give kids are a representation of the world — how we see it, what we think is important, and how we think it should be. If you have a white child (as I do) and you want to raise that child to be anti-racist (as we all should), you'll need to pay attention."
 ---

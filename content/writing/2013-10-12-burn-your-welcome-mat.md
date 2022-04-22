@@ -1,9 +1,9 @@
 ---
 title: "Burn your welcome mat"
 date: 2013-10-12
-layout: post
+layout: post.njk
 subtitle: "Why you should do away with your unhelpful homepage copy."
-meta: Originally [published on Medium](https://medium.com/back-to-basics/burn-your-welcome-mat-ee7f5916f6ef)
+meta: Originally published on Medium
 excerpt: "When users come to your website, they’re not wandering a residential neighborhood knocking on doors and looking for new friends to spend time with. They’re trying to get somewhere, find something, or complete a task."
 ---
 

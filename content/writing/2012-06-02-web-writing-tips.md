@@ -1,7 +1,7 @@
 ---
 title: "Web writing tips for sharing without overwhelming"
 date: 2012-06-02
-layout: post
+layout: post.njk
 meta: Originally posted to Tumblr
 excerpt: "Think of it this way: if this web page floated down from the ceiling onto an unsuspecting person’s desk, could they figure out what it is or where to file it?"
 ---

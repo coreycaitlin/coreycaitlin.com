@@ -1,9 +1,9 @@
 ---
 title: "40 things I learned in my last job"
 date: 2016-08-31
-layout: post
+layout: post.njk
 subtitle: "Over a year ago, I sat down and made a list of what I learned in my last job."
-meta: Originally [published on Medium](https://medium.com/@coreycaitlin/40-things-i-learned-in-my-last-job-f01639118aa4)
+meta: Originally published on Medium
 excerpt: "The most important thing I took from 3 years at UC was this: I got a little better at messing up and being wrong."
 ---
 
