@@ -9,11 +9,11 @@
   <title>{{ title }}</title>
 </head>
 <body class="sm:m-8 md:m-12 md:w-3/4 sm:w-full bg-stone-50 font-serif">
-  <header class="border-b border-b-stone-300 pb-8">
+  <header class="border-b border-b-stone-300">
     <h1 class="text-3xl">Corey Mahoney</h1>
-      <ul>
-      {%- for nav in collections.nav | reverse -%}
-        <li{% if page.url == nav.url %} aria-current="page" class="text-red-800"{% endif %}>
+      <ul class="flex flex-row mt-14 pb-4 text-xl">
+      {%- for nav in collections.nav -%}
+        <li{% if page.url == nav.url %} aria-current="page"{% endif %} class="{% if page.url == nav.url %}text-red-800{% endif %} flex-none w-20">
           <a href="{{ nav.url }}">{{ nav.data.title }}</a>
         </li>
       {%- endfor -%}
