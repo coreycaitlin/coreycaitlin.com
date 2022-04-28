@@ -6,10 +6,10 @@ permalink: "/writing/{{ page.fileSlug }}/"
 
 <div class="border-b">
     <h1 class="notprose font-medium text-2xl mb-0">{{ title }}</h1>
-    <h2 class="notprose italic font-light text-xl text-stone-700 mt-0">{% if subtitle %}
+    <h2 class="notprose italic font-light text-xl text-stone-500 mt-0">{% if subtitle %}
         {{ subtitle }}
     {% endif %}</h2>
-    <p class="">{{ date | date('MMMM D, YYYY') }}{% if meta %}
+    <p>{{ date | date('MMMM D, YYYY') }}{% if meta %}
         | {{ meta }}
         {% endif %}
     </p>

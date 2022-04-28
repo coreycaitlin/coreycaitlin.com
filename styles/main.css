@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.dropcap {
+    font-size: 4.2em;
+    font-weight: 400;
+    display: inline-block;
+    float: left;
+    margin-top: -10px;
+    line-height: 1;
+    height: 0.75em;
+    width: 0.7em;
+}
