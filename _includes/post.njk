@@ -5,8 +5,8 @@ permalink: "/writing/{{ page.fileSlug }}/"
 ---
 
 <div class="border-b">
-    <h1 class="notprose font-medium text-2xl mb-0">{{ title }}</h1>
-    <h2 class="notprose italic font-light text-xl text-stone-500 mt-0">{% if subtitle %}
+    <h1 class="notprose font-medium text-2xl mb-0 text-neutral-800">{{ title }}</h1>
+    <h2 class="notprose italic font-light text-lg text-neutral-500 mt-0">{% if subtitle %}
         {{ subtitle }}
     {% endif %}</h2>
     <p>{{ date | date('MMMM D, YYYY') }}{% if meta %}
@@ -14,5 +14,9 @@ permalink: "/writing/{{ page.fileSlug }}/"
         {% endif %}
     </p>
 </div>
-
-{{ content | safe }}
+<article class="border-b pb-6 mb-2 prose-blockquote:not-italic prose-blockquote:text-neutral-600 prose-h2:text-lg prose-h3:text-lg prose-h3:font-normal">
+    {{ content | safe }}
+</article>
+<div class="prose-a:text-neutral-700 prose-a:font-normal prose-a:border-none hover:prose-a:text-red-800">
+    <a href="/writing/">« Back to writing archive</a>
+</div>

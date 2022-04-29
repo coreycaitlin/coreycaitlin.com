@@ -4,7 +4,7 @@ title: 4 readings on trees
 permalink: /treeptych/
 ---
 
-# Treeptych for Winter 2016
+# Triptych for Winter 2016
 
 “What kind of times are these” by [Adrienne Rich](https://www.poetryfoundation.org/poems-and-poets/poems/detail/51092):
 

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .dropcap {
-    font-size: 4.2em;
+    font-size: 4em;
     font-weight: 400;
     display: inline-block;
     float: left;

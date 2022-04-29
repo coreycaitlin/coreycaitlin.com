@@ -1,20 +1,21 @@
 ---
 layout: layout.njk
 ---
-
-{{ content | safe }}
+<div class="border-b border-b-neutral-300 mb-20">
+  {{ content | safe }}
+</div>
 
 {%- for post in collections.post | reverse -%}
-    <h2 class="mb-2"><a class="border-b border-dotted border-red-900 no-underline text-stone-800 hover:border-solid" 
-        href="{% if post.data.redirect %}
-            {{ post.data.redirect }}
-        {% else %}
-            {{ post.url }}
-        {% endif %}">
-        {{ post.data.title }}
-    </a></h2>
-    <p class="italic text-stone-600">{{ post.data.date | date('MMMM D, YYYY') }}{% if post.data.meta %}
-        | {{ post.data.meta }}        
-    {% endif %}</p>
-    <p>{{ post.data.excerpt }}</p>
+  <h2 class="mb-2 text-2xl"><a class="" 
+    href="{% if post.data.redirect %}
+      {{ post.data.redirect }}
+    {% else %}
+      {{ post.url }}
+    {% endif %}">
+    {{ post.data.title }}
+  </a></h2>
+  <p class="italic text-neutral-600 mb-0">{{ post.data.date | date('MMMM D, YYYY') }}{% if post.data.meta %}
+    | {{ post.data.meta }}        
+  {% endif %}</p>
+  <p class="mt-1">{{ post.data.excerpt }}</p>
 {%- endfor -%}

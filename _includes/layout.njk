@@ -5,32 +5,32 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/main.css">
+  <!-- Google fonts -->
+  <link href="http://fonts.googleapis.com/css?family=Crimson+Text:400,600,400italic" rel="stylesheet" type="text/css">
   <!-- Grab title from the page data and dump it here -->
   <title>{{ title }}</title>
 </head>
-<body class="sm:m-8 md:m-12 md:w-3/4 sm:w-full bg-stone-50 font-serif">
-  <header class="border-b border-b-stone-300">
-    <h1 class="text-3xl">Corey Mahoney</h1>
-      <ul class="flex flex-row mt-14 pb-4 text-xl">
+<body class="sm:m-8 md:m-14 md:w-3/4 sm:w-full bg-stone-50 font-serif">
+  <header class="border-b border-b-neutral-300">
+    <h1 class="text-3xl text-neutral-700">Corey Mahoney</h1>
+      <ul class="flex flex-row mt-10 pb-6 text-xl text-neutral-700">
       {%- for nav in collections.nav -%}
         <li{% if page.url == nav.url %} aria-current="page"{% endif %} class="{% if page.url == nav.url %}text-red-800{% endif %} flex-none w-20">
-          <a href="{{ nav.url }}">{{ nav.data.title }}</a>
+          <a class="hover:text-red-700" href="{{ nav.url }}">{{ nav.data.title }}</a>
         </li>
       {%- endfor -%}
       </ul>
   </header>
-  <main class="pt-12 prose prose-stone prose-a:text-red-800">
+  <main class="pt-12 prose prose-neutral prose-xl prose-li:leading-5 prose-a:text-neutral-700 prose-a:font-normal prose-a:no-underline prose-a:border-b prose-a:border-dotted prose-a:border-red-800 hover:prose-a:text-red-800">
     {{ content | safe }}
   </main>
-  <footer class="mt-8 pt-2 border-t bordert-t-solid border-t-stone-300 text-stone-700">
-    <p class="copyright">
-      &copy; 2022 Corey Mahoney
-      <a href="/treeptych/">treeptych</a>
-      /
-      <a href="/checklists/">checklists</a>
-      /
-      <a href="/hey/">reminders</a>
-    </p>
+  <footer class="mt-12 pt-2 border-t bordert-t-solid border-t-neutral-200 text-neutral-500">
+    &copy; 2022 Corey Mahoney
+    <a class="border-b border-dotted border-red-800 hover:text-red-700" href="/treeptych/">treeptych</a>
+    /
+    <a class="border-b border-dotted border-red-800 hover:text-red-700" href="/checklists/">checklists</a>
+    /
+    <a class="border-b border-dotted border-red-800 hover:text-red-700" href="/hey/">reminders</a>
   </footer>
 </body>
 </html>
