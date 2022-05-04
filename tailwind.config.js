@@ -12,8 +12,9 @@ module.exports = {
     },
     extend: {
       typography: {
-        xl: {
+        lg: {
           css: {
+            'font-size': '1.25rem',
             'line-height': '1.35em',
           },
         },
