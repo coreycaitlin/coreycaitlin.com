@@ -2,33 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/main.css">
-  <!-- Google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,600,400italic" rel="stylesheet" type="text/css">
-  <!-- Grab title from the page data and dump it here -->
   <title>{{ title }}</title>
 </head>
-<body class="m-8 md:m-14 md:w-3/4 bg-stone-50 font-serif">
-  <header class="border-b border-b-neutral-300">
-    <h1 class="text-3xl text-neutral-700">Corey Mahoney</h1>
-      <ul class="flex flex-row mt-10 pb-6 text-xl text-neutral-700">
+<body>
+  <header>
+    <h1>Corey Mahoney</h1>
+    <nav>
+      <ul>
       {%- for nav in collections.nav -%}
-        <li{% if page.url == nav.url %} aria-current="page"{% endif %} class="{% if page.url == nav.url %}text-red-800{% endif %} flex-none w-20">
-          <a class="hover:text-red-700" href="{{ nav.url }}">{{ nav.data.title }}</a>
+        <li{% if page.url == nav.url %} aria-current="page"{% endif %}>
+          <a href="{{ nav.url }}">{{ nav.data.title }}</a>
         </li>
       {%- endfor -%}
       </ul>
+    </nav>
   </header>
-  <main class="pt-12 prose prose-neutral prose-lg prose-blockquote:not-italic prose-blockquote:text-neutral-600 prose-h2:text-lg prose-h3:text-lg prose-h3:font-normal prose-a:text-neutral-700 prose-a:no-underline prose-a:border-b prose-a:border-dotted prose-a:border-red-800 hover:prose-a:text-red-800">
+  <main>
     {{ content | safe }}
   </main>
-  <footer class="mt-12 pt-2 border-t bordert-t-solid border-t-neutral-200 text-neutral-500">
+  <footer>
     &copy; 2022 Corey Mahoney
-    <a class="border-b border-dotted border-red-800 hover:text-red-700" href="/checklists/">checklists</a>
+    <a href="/checklists/">checklists</a>
     /
-    <a class="border-b border-dotted border-red-800 hover:text-red-700" href="/hey/">reminders</a>
+    <a href="/hey/">reminders</a>
   </footer>
 </body>
 </html>
