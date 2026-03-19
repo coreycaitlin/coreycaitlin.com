@@ -1,14 +1,282 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Fonts */
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/crimson-text-400.woff2') format('woff2');
+}
 
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/crimson-text-400-italic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/crimson-text-600.woff2') format('woff2');
+}
+
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base */
+body {
+  font-family: 'Crimson Text', Georgia, ui-serif, serif;
+  font-size: 1.25rem;
+  line-height: 1.75;
+  color: #262626;
+  background-color: #fafaf9;
+  margin: 2rem;
+}
+
+@media (min-width: 768px) {
+  body {
+    margin: 3.5rem;
+    max-width: 75%;
+  }
+}
+
+/* Header */
+header {
+  border-bottom: 1px solid #d4d4d4;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #404040;
+  line-height: 1.2;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  list-style: none;
+  margin-top: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+
+nav li {
+  width: 5rem;
+  font-size: 1.55rem;
+}
+
+nav a {
+  color: #404040;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #b91c1c;
+}
+
+nav [aria-current="page"] a {
+  color: #991b1b;
+}
+
+/* Main */
+main {
+  padding-top: 3rem;
+  max-width: 44rem;
+}
+
+/* Headings */
+main h2 {
+  font-size: 1.5rem;
+  color: #171717;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
+main h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #171717;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+/* Paragraphs */
+main p {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+}
+
+/* Links */
+main a {
+  color: #404040;
+  text-decoration: none;
+  border-bottom: 1px dotted #991b1b;
+}
+
+main a:hover {
+  color: #991b1b;
+}
+
+/* Blockquotes */
+main blockquote {
+  border-left: 3px solid #d4d4d4;
+  padding-left: 1rem;
+  color: #525252;
+  font-style: normal;
+  margin: 1.5em 0;
+}
+
+/* Lists */
+main ul,
+main ol {
+  padding-left: 1.5rem;
+  margin: 1em 0;
+}
+
+main li {
+  margin: 0.25em 0;
+}
+
+/* HR */
+main hr {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  margin: 2em 0;
+}
+
+main strong {
+  font-weight: 600;
+}
+
+/* Post */
+.post-header {
+  border-bottom: 1px solid #d4d4d4;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.post-title {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: #262626;
+  line-height: 1.3;
+}
+
+.post-subtitle {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 400;
+  color: #737373;
+  margin-top: 0.25em;
+}
+
+.post-meta {
+  color: #737373;
+  margin-top: 0.5em;
+}
+
+.post-body {
+  border-bottom: 1px solid #d4d4d4;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.post-back a {
+  border: none;
+  color: #404040;
+}
+
+.post-back a:hover {
+  color: #991b1b;
+}
+
+/* Writing list */
+.writing-intro {
+  border-bottom: 1px solid #d4d4d4;
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+}
+
+.writing-list h2 {
+  font-size: 1.75rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0.25rem;
+  color: #171717;
+  line-height: 1.3;
+}
+
+.writing-list h2:first-child {
+  margin-top: 0;
+}
+
+.writing-list h2 a {
+  border: none;
+  color: #171717;
+}
+
+.writing-list h2 a:hover {
+  color: #991b1b;
+}
+
+.writing-meta {
+  font-style: italic;
+  color: #525252;
+}
+
+.writing-excerpt {
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+  margin-top: 3rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #e5e5e5;
+  color: #737373;
+  font-size: 1rem;
+}
+
+footer a {
+  color: #737373;
+  text-decoration: none;
+  border-bottom: 1px dotted #991b1b;
+}
+
+footer a:hover {
+  color: #b91c1c;
+  border-bottom-color: #b91c1c;
+}
+
+/* Drop cap */
 .dropcap {
-    font-size: 4em;
-    font-weight: 400;
-    display: inline-block;
-    float: left;
-    margin-top: -10px;
-    line-height: 1;
-    height: 0.82em;
-    padding-right: 0.18em;
+  font-size: 4em;
+  font-weight: 400;
+  display: inline-block;
+  float: left;
+  margin-top: -10px;
+  line-height: 1;
+  height: 0.82em;
+  padding-right: 0.18em;
+}
+
+/* Checklist forms */
+.not-prose ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.not-prose li {
+  margin: 0.4em 0;
+}
+
+.not-prose label {
+  margin-left: 0.4em;
 }

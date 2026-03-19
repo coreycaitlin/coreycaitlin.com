@@ -4,19 +4,14 @@ tags: post
 permalink: "/writing/{{ page.fileSlug }}/"
 ---
 
-<div class="border-b">
-    <h1 class="notprose font-medium text-2xl mb-0 text-neutral-800">{{ title }}</h1>
-    <h2 class="notprose italic font-light text-lg text-neutral-500 mt-0">{% if subtitle %}
-        {{ subtitle }}
-    {% endif %}</h2>
-    <p>{{ date | date('MMMM D, YYYY') }}{% if meta %}
-        | {{ meta }}
-        {% endif %}
-    </p>
+<div class="post-header">
+  <h1 class="post-title">{{ title }}</h1>
+  {% if subtitle %}<p class="post-subtitle">{{ subtitle }}</p>{% endif %}
+  <p class="post-meta">{{ date | date('MMMM D, YYYY') }}{% if meta %} | {{ meta }}{% endif %}</p>
 </div>
-<article class="border-b pb-6 mb-2">
-    {{ content | safe }}
-</article>
-<div class="prose-a:text-neutral-700 prose-a:font-normal prose-a:border-none hover:prose-a:text-red-800">
-    <a href="/writing/">« Back to writing archive</a>
+<div class="post-body">
+  {{ content | safe }}
+</div>
+<div class="post-back">
+  <a href="/writing/">« Back to writing archive</a>
 </div>
